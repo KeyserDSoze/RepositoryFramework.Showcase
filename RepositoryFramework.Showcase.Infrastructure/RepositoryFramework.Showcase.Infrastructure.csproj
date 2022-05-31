@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
@@ -10,7 +10,7 @@
 		<ProjectReference Include="..\RepositoryFramework.Showcase.Domain\RepositoryFramework.Showcase.Domain.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Rystem.RepositoryFramework" Version="0.8.1" />
+		<PackageReference Include="Rystem.RepositoryFramework.Abstractions" Version="0.9.1" />
 	</ItemGroup>
 
 </Project>

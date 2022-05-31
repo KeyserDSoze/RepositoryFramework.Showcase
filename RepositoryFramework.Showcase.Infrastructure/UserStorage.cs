@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace RepositoryFramework.Showcase.Infrastructure
 {
-    public class UserStorage : IStringableRepository<User>
+    public class UserStorage : IRepository<User, string>
     {
         public Task<bool> DeleteAsync(string key, CancellationToken cancellationToken = default)
         {
