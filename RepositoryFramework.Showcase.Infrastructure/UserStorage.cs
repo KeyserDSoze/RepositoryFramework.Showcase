@@ -3,9 +3,15 @@ using System.Linq.Expressions;
 
 namespace RepositoryFramework.Showcase.Infrastructure
 {
-    public class UserStorage : IRepository<User, string>
+    public class UserStorage : IRepositoryPattern<User>
     {
         public Task<bool> DeleteAsync(string key, CancellationToken cancellationToken = default)
+        {
+            //We do something here with a DB context for example
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> ExistAsync(string key, CancellationToken cancellationToken = default)
         {
             //We do something here with a DB context for example
             throw new NotImplementedException();

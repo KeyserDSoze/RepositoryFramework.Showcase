@@ -4,7 +4,7 @@ using RepositoryFramework.Showcase.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRepositoryInMemoryStorageWithStringKey<User>()
+builder.Services.AddRepositoryInMemoryStorage<User>()
     .PopulateWithRandomData(x => x.Email, 120, 5)
     .WithAutoIncrement(x => x.Id, 1)
     .WithPattern(x => x.Email, "[a-z]{4,10}@gmail.com")

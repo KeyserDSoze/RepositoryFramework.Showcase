@@ -10,7 +10,7 @@
 		<ProjectReference Include="..\RepositoryFramework.Showcase.Domain\RepositoryFramework.Showcase.Domain.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Rystem.RepositoryFramework.Abstractions" Version="0.9.1" />
+		<PackageReference Include="Rystem.RepositoryFramework.Abstractions" Version="0.9.6" />
 	</ItemGroup>
 
 </Project>

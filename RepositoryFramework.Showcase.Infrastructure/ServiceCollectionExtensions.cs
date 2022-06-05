@@ -11,6 +11,6 @@ namespace RepositoryFramework.Showcase.Infrastructure
     public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddUserStorage(this IServiceCollection services) 
-            => services.AddRepositoryWithStringKey<User, UserStorage>(ServiceLifetime.Scoped);
+            => services.AddRepository<User, UserStorage>(ServiceLifetime.Scoped);
     }
 }

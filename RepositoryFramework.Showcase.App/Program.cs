@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
 using RepositoryFramework.Showcase.App.Data;
 using RepositoryFramework.Showcase.Domain;
 
