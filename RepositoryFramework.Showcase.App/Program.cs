@@ -1,4 +1,3 @@
-using RepositoryFramework.Showcase.App.Data;
 using RepositoryFramework.Showcase.Domain;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,8 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddRepositoryClient<User, string>("localhost:7032");
+builder.Services.AddRepositoryClient<User>("localhost:7032");
 
 var app = builder.Build();
 
