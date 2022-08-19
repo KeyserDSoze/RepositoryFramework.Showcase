@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddRepositoryClient<User, string>("localhost:7032");
+builder.Services.AddRepositoryApiClient<User>("localhost:7032");
 
 var app = builder.Build();
 

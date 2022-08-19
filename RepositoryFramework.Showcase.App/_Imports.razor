@@ -8,7 +8,6 @@
 @using Microsoft.JSInterop
 @using RepositoryFramework.Showcase.App
 @using RepositoryFramework.Showcase.App.Shared
-@using RepositoryFramework.Client
 @using RepositoryFramework.Showcase.Domain
 
-@inject IRepositoryClient<User, string> UserClient
+@inject IRepository<User> UserClient

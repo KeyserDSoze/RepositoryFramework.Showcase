@@ -17,9 +17,10 @@ Welcome to your new app.
 
 @code {
     private IEnumerable<User> Users;
+
     protected override async Task OnParametersSetAsync()
     {
-        Users = await UserClient.QueryAsync(x => x.Id > 10);
+        Users = await UserClient.Where(x => x.Id > 10).ToListAsync().NoContext();
         await base.OnParametersSetAsync();
     }
 }
